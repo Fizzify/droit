@@ -6,7 +6,7 @@
 
   const handleTaskDelete = (): void => {
     tasks.update((prev) =>
-      prev.filter((foundTask) => foundTask.id !== task.id)
+      prev.filter((foundTask) => foundTask.id !== task.id),
     );
   };
 
